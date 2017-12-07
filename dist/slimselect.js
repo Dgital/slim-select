@@ -924,8 +924,8 @@ function validateData(data) {
             if (data[i].hasOwnProperty('options')) {
                 var optgroup = data[i];
                 var options = optgroup.options;
-                for (var i = 0; i < options.length; i++) {
-                    isValid = validateOption(options[i]);
+                for (var j = 0; j < options.length; j++) {
+                    isValid = validateOption(options[j]);
                     if (!isValid) {
                         errorCount++;
                     }
